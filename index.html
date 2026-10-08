@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#ea580c" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="DKA TTS" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="alternate icon" href="/favicon.ico" />
+    <title>Dhatwal Ki Awaaz - TTS - Indian Accents Text to Speech</title>
+    <meta name="description" content="Studio-quality Text to Speech platform with authentic Indian accents in Indian English and Hindi." />
+    <meta property="og:title" content="Dhatwal Ki Awaaz - TTS - Indian Accents Text to Speech" />
+    <meta property="og:description" content="Studio-quality Text to Speech platform with authentic Indian accents in Indian English and Hindi." />
+    <meta property="og:image" content="/dhatwal-valley-bg.svg" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/dhatwal-valley-bg.svg" />
+    <script>
+      // Gracefully ignore HMR WebSocket notices in cloud container preview environments
+      window.addEventListener('error', (event) => {
+        if (event?.message && (event.message.includes('WebSocket') || event.message.includes('ws://') || event.message.includes('wss://'))) {
+          event.stopImmediatePropagation();
+          event.preventDefault();
+        }
+      }, true);
+      window.addEventListener('unhandledrejection', (event) => {
+        const msg = event?.reason?.message || String(event?.reason || '');
+        if (msg.includes('WebSocket') || msg.includes('ws://') || msg.includes('wss://')) {
+          event.stopImmediatePropagation();
+          event.preventDefault();
+        }
+      }, true);
+      const _origErr = console.error;
+      console.error = function (...args) {
+        const str = args.map((a) => (a instanceof Error ? a.message : String(a))).join(' ');
+        if (str.includes('WebSocket closed without opened') || str.includes('WebSocket') && (str.includes('closed') || str.includes('failed'))) {
+          return;
+        }
+        _origErr.apply(console, args);
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

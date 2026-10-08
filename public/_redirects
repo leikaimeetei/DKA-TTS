@@ -1,0 +1,9 @@
+# Netlify Redirects Configuration for Dhatwal Ki Awaaz (DKA) TTS Studio
+# Forward API requests to Netlify Serverless Functions
+/api/health            /.netlify/functions/health           200
+/api/tts               /.netlify/functions/tts              200
+/api/translate-script  /.netlify/functions/translate-script 200
+/api/*                 /.netlify/functions/:splat           200
+
+# Single Page App routing: rewrite all other routes to index.html
+/*                     /index.html                          200

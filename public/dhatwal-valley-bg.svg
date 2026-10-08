@@ -1,0 +1,303 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Sky & Sun Gradients -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="25%" stop-color="#60a5fa" />
+      <stop offset="50%" stop-color="#f472b6" />
+      <stop offset="72%" stop-color="#fb923c" />
+      <stop offset="90%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#fef08a" />
+    </linearGradient>
+
+    <radialGradient id="sunGlow" cx="90%" cy="32%" r="45%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="12%" stop-color="#fef08a" stop-opacity="0.9" />
+      <stop offset="35%" stop-color="#fbbf24" stop-opacity="0.6" />
+      <stop offset="60%" stop-color="#f97316" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Mountain Layer Gradients -->
+    <linearGradient id="snowPeaks" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="45%" stop-color="#f1f5f9" />
+      <stop offset="75%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+
+    <linearGradient id="peakShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e2e8f0" />
+      <stop offset="50%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#64748b" />
+    </linearGradient>
+
+    <linearGradient id="ridgeFar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#4338ca" stop-opacity="0.95" />
+    </linearGradient>
+
+    <linearGradient id="ridgeMid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.8" />
+      <stop offset="60%" stop-color="#1d4ed8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+
+    <linearGradient id="ridgeGreenMid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#047857" />
+      <stop offset="50%" stop-color="#065f46" />
+      <stop offset="100%" stop-color="#064e3b" />
+    </linearGradient>
+
+    <linearGradient id="ridgeForeLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#15803d" />
+      <stop offset="50%" stop-color="#166534" />
+      <stop offset="100%" stop-color="#14532d" />
+    </linearGradient>
+
+    <linearGradient id="valleyFields" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#65a30d" />
+      <stop offset="40%" stop-color="#eab308" />
+      <stop offset="70%" stop-color="#84cc16" />
+      <stop offset="100%" stop-color="#ca8a04" />
+    </linearGradient>
+
+    <linearGradient id="riverWater" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#93c5fd" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#bfdbfe" stop-opacity="0.95" />
+      <stop offset="80%" stop-color="#fef08a" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#fed7aa" stop-opacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="mistGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.7" />
+      <stop offset="60%" stop-color="#fed7aa" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="roadGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="50%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#64748b" />
+    </linearGradient>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- SKY BACKGROUND -->
+  <rect x="0" y="0" width="1600" height="500" fill="url(#skyGrad)" />
+
+  <!-- MORNING SUN RAYS & CORONA (Right Side Sunrise) -->
+  <circle cx="1450" cy="160" r="380" fill="url(#sunGlow)" />
+  <g opacity="0.25">
+    <polygon points="1450,160 800,0 950,0" fill="#fef08a" />
+    <polygon points="1450,160 1100,0 1250,0" fill="#fef08a" />
+    <polygon points="1450,160 550,220 580,260" fill="#fef08a" />
+    <polygon points="1450,160 700,320 740,360" fill="#fef08a" />
+    <polygon points="1450,160 1000,450 1060,470" fill="#fef08a" />
+    <polygon points="1450,160 1350,500 1420,500" fill="#fef08a" />
+    <polygon points="1450,160 1520,500 1600,450" fill="#fef08a" />
+    <polygon points="1450,160 1600,280 1600,220" fill="#fef08a" />
+    <polygon points="1450,160 1600,80 1600,30" fill="#fef08a" />
+  </g>
+  <circle cx="1450" cy="160" r="28" fill="#ffffff" filter="url(#softGlow)" />
+
+  <!-- SOFT MORNING CLOUDS -->
+  <path d="M50 80 Q140 60 220 85 Q300 70 380 90 Q300 110 200 105 Q100 115 50 80 Z" fill="#ffffff" opacity="0.3" />
+  <path d="M420 50 Q520 35 620 55 Q720 40 820 65 Q740 85 640 80 Q520 90 420 50 Z" fill="#ffffff" opacity="0.35" />
+  <path d="M900 95 Q980 75 1060 90 Q1140 80 1200 100 Q1120 120 1040 115 Q960 125 900 95 Z" fill="#fed7aa" opacity="0.4" />
+
+  <!-- MAJESTIC SNOW-CAPPED HIMALAYAN PEAKS (DISTANT HORIZON) -->
+  <polygon points="180,185 240,135 290,165 340,125 390,155 450,110 510,150 560,130 620,165 680,140 730,175 790,145 840,170 910,130 960,165 1010,140 1080,175 1140,150 1200,180 1250,160 1310,190 1380,170 1440,200 1600,200 1600,240 0,240 0,185" fill="url(#peakShadow)" />
+  <polygon points="210,185 240,135 270,185 310,185 340,125 370,185 410,185 450,110 490,185 530,185 560,130 590,185 640,185 680,140 710,185 750,185 790,145 820,185 870,185 910,130 940,185 980,185 1010,140 1040,185 1100,185 1140,150 1170,185 1220,185 1250,160 1280,185 1340,185 1380,170 1410,185" fill="url(#snowPeaks)" />
+
+  <!-- LAYER 1: DEEP BLUE RECEDING RIDGES -->
+  <path d="M0 220 Q200 190 400 215 T800 205 T1200 220 T1600 210 L1600 270 L0 270 Z" fill="url(#ridgeFar)" />
+
+  <!-- LAYER 2: MID BLUE MOUNTAIN SLOPES -->
+  <path d="M0 245 Q260 215 520 240 T1040 230 T1600 245 L1600 320 L0 320 Z" fill="url(#ridgeMid)" />
+
+  <!-- FLOATING MORNING VALLEY MIST -->
+  <path d="M300 250 Q600 235 900 255 T1500 250 L1600 290 Q1200 310 800 295 T200 305 L0 280 Z" fill="url(#mistGrad)" />
+
+  <!-- LAYER 3: GREEN ROLLING HILLS (CENTER & RIGHT) -->
+  <path d="M420 270 Q650 240 900 270 T1400 260 T1600 280 L1600 420 L400 420 Z" fill="url(#ridgeGreenMid)" />
+
+  <!-- THE VALLEY RIVER / LAKE BASIN (Misty reflection of morning light) -->
+  <path d="M720 300 Q860 285 1020 295 T1280 305 T1420 320 L1400 338 Q1250 325 1050 315 T740 318 Z" fill="url(#riverWater)" />
+
+  <!-- TERRACED FIELDS & AGRICULTURAL SLOPES IN VALLEY -->
+  <path d="M680 320 Q920 305 1180 325 T1600 340 L1600 480 Q1250 490 850 470 T480 430 Z" fill="url(#valleyFields)" opacity="0.85" />
+  <!-- Terraced step lines -->
+  <g stroke="#4d7c0f" stroke-width="1.2" opacity="0.6">
+    <path d="M820 330 Q960 320 1120 335 T1340 345" fill="none" />
+    <path d="M780 345 Q940 335 1110 350 T1360 360" fill="none" />
+    <path d="M750 365 Q920 350 1100 370 T1380 380" fill="none" />
+    <path d="M720 385 Q910 370 1110 392 T1410 405" fill="none" />
+    <path d="M700 408 Q900 395 1120 418 T1440 430" fill="none" />
+  </g>
+
+  <!-- TINY VALLEY VILLAGE HAMLETS (Center-right valley) -->
+  <g fill="#f8fafc" stroke="#94a3b8" stroke-width="0.5">
+    <rect x="940" y="325" width="8" height="6" fill="#f87171" />
+    <rect x="955" y="326" width="10" height="7" fill="#60a5fa" />
+    <rect x="972" y="324" width="7" height="6" fill="#fef08a" />
+    <rect x="1080" y="335" width="9" height="7" fill="#fca5a5" />
+    <rect x="1095" y="336" width="11" height="8" fill="#93c5fd" />
+    <rect x="1115" y="334" width="8" height="6" fill="#fde047" />
+    <rect x="1220" y="350" width="10" height="8" fill="#fb923c" />
+    <rect x="1238" y="352" width="12" height="9" fill="#f8fafc" />
+    <rect x="1258" y="348" width="9" height="7" fill="#60a5fa" />
+    <rect x="1330" y="365" width="11" height="8" fill="#ef4444" />
+    <rect x="1348" y="368" width="13" height="9" fill="#e2e8f0" />
+  </g>
+
+  <!-- LAYER 4: PROMINENT FOREGROUND RIDGE ON LEFT -->
+  <path d="M0 240 Q150 200 320 280 T480 380 T560 480 L0 500 Z" fill="url(#ridgeForeLeft)" />
+
+  <!-- WINDING HIMALAYAN HIGHWAY (Left ridge curving down to valley) -->
+  <path d="M0 320 Q90 320 180 345 T280 400 T360 460 T420 500" fill="none" stroke="url(#roadGrad)" stroke-width="26" stroke-linecap="round" />
+  <path d="M0 320 Q90 320 180 345 T280 400 T360 460 T420 500" fill="none" stroke="#fef08a" stroke-width="1.8" stroke-dasharray="8,6" opacity="0.8" />
+  <path d="M0 307 Q90 307 175 332 T273 388 T353 448 T413 488" fill="none" stroke="#e2e8f0" stroke-width="2" opacity="0.7" />
+
+  <!-- MOUNTAIN COTTAGES & VILLAGE SETTLEMENT (Left hillside alongside road) -->
+  <!-- Cottage 1 (Orange/Red Roof) -->
+  <g transform="translate(18, 245)">
+    <polygon points="12,0 0,10 24,10" fill="#dc2626" />
+    <rect x="2" y="10" width="20" height="18" fill="#fef08a" stroke="#ca8a04" stroke-width="0.8" />
+    <rect x="6" y="14" width="5" height="6" fill="#1e293b" />
+    <rect x="14" y="14" width="5" height="6" fill="#1e293b" />
+    <rect x="10" y="22" width="5" height="6" fill="#78350f" />
+  </g>
+  <!-- Cottage 2 (Cyan/Blue Balcony House) -->
+  <g transform="translate(46, 255)">
+    <polygon points="15,0 0,11 30,11" fill="#ea580c" />
+    <rect x="2" y="11" width="26" height="22" fill="#e0f2fe" stroke="#38bdf8" stroke-width="0.8" />
+    <rect x="6" y="15" width="6" height="6" fill="#1e293b" />
+    <rect x="18" y="15" width="6" height="6" fill="#1e293b" />
+    <rect x="2" y="23" width="26" height="4" fill="#0284c7" />
+  </g>
+  <!-- Cottage 3 (White & Green Alpine Hill Home) -->
+  <g transform="translate(80, 275)">
+    <polygon points="18,0 0,12 36,12" fill="#b91c1c" />
+    <rect x="3" y="12" width="30" height="25" fill="#f8fafc" stroke="#cbd5e1" stroke-width="0.8" />
+    <rect x="8" y="16" width="7" height="8" fill="#0f172a" />
+    <rect x="21" y="16" width="7" height="8" fill="#0f172a" />
+    <rect x="14" y="27" width="8" height="10" fill="#92400e" />
+  </g>
+  <!-- Cottage 4 (Lower Terrace Home) -->
+  <g transform="translate(125, 305)">
+    <polygon points="16,0 0,10 32,10" fill="#0284c7" />
+    <rect x="3" y="10" width="26" height="20" fill="#fef3c7" stroke="#d97706" stroke-width="0.8" />
+    <rect x="7" y="13" width="6" height="6" fill="#1e293b" />
+    <rect x="19" y="13" width="6" height="6" fill="#1e293b" />
+  </g>
+
+  <!-- PAGODA HIMALAYAN TEMPLE (Crowing the Left Peak Summit) -->
+  <g transform="translate(48, 128)">
+    <!-- Base plinth -->
+    <rect x="4" y="60" width="36" height="12" fill="#fef3c7" stroke="#b45309" stroke-width="1" />
+    <!-- Lower shrine room -->
+    <rect x="8" y="44" width="28" height="16" fill="#fffbeb" stroke="#d97706" stroke-width="1" />
+    <!-- Tier 1 gabled pagoda roof -->
+    <polygon points="22,30 -2,44 46,44" fill="#b45309" />
+    <polygon points="22,30 2,42 42,42" fill="#d97706" />
+    <!-- Upper sanctum -->
+    <rect x="13" y="22" width="18" height="10" fill="#fef3c7" stroke="#b45309" stroke-width="0.8" />
+    <!-- Tier 2 top pagoda roof -->
+    <polygon points="22,10 4,22 40,22" fill="#92400e" />
+    <polygon points="22,10 7,20 37,20" fill="#f59e0b" />
+    <!-- Golden Kalash spire & finial -->
+    <line x1="22" y1="10" x2="22" y2="0" stroke="#f59e0b" stroke-width="2.5" />
+    <circle cx="22" cy="0" r="3" fill="#fef08a" stroke="#d97706" stroke-width="0.8" />
+    <!-- Red flag / Dhwaja -->
+    <polygon points="23,1 32,4 23,7" fill="#dc2626" />
+  </g>
+
+  <!-- PINE, DEODAR & CEDAR TREES (Left hill slope and ridge) -->
+  <!-- Tree clusters on ridge -->
+  <g fill="#14532d">
+    <!-- Tall Pine 1 -->
+    <polygon points="12,190 2,215 22,215" />
+    <polygon points="12,205 0,230 24,230" />
+    <polygon points="12,220 -2,245 26,245" />
+    <rect x="10" y="245" width="4" height="12" fill="#451a03" />
+
+    <!-- Pine 2 -->
+    <polygon points="120,195 112,215 128,215" />
+    <polygon points="120,208 108,228 132,228" />
+    <polygon points="120,220 105,240 135,240" />
+    <rect x="118" y="240" width="4" height="10" fill="#451a03" />
+
+    <!-- Pine 3 -->
+    <polygon points="140,210 132,226 148,226" />
+    <polygon points="140,222 129,238 151,238" />
+    <polygon points="140,232 126,248 154,248" />
+    <rect x="138" y="248" width="4" height="8" fill="#451a03" />
+
+    <!-- Hillside Pine Forest along Road -->
+    <polygon points="240,290 230,312 250,312" />
+    <polygon points="240,305 226,328 254,328" />
+    <polygon points="240,320 222,342 258,342" />
+
+    <polygon points="295,310 286,330 304,330" />
+    <polygon points="295,324 282,344 308,344" />
+    <polygon points="295,338 278,358 312,358" />
+
+    <polygon points="345,340 336,360 354,360" />
+    <polygon points="345,354 332,374 358,374" />
+    <polygon points="345,368 328,388 362,388" />
+
+    <polygon points="390,370 382,390 398,390" />
+    <polygon points="390,384 378,404 402,404" />
+    <polygon points="390,398 374,418 406,418" />
+
+    <polygon points="440,400 432,420 448,420" />
+    <polygon points="440,414 428,434 452,434" />
+    <polygon points="440,428 424,448 456,448" />
+  </g>
+
+  <!-- PINE CLUSTERS ON RIGHT RIDGE -->
+  <g fill="#166534" opacity="0.85">
+    <polygon points="1480,265 1474,278 1486,278" />
+    <polygon points="1480,274 1471,288 1489,288" />
+    <polygon points="1500,270 1494,284 1506,284" />
+    <polygon points="1520,260 1514,275 1526,275" />
+    <polygon points="1550,275 1543,290 1557,290" />
+    <polygon points="1575,280 1568,295 1582,295" />
+  </g>
+
+  <!-- VIBRANT RHODODENDRON FLOWERS (FOREGROUND BOTTOM-LEFT) -->
+  <g transform="translate(0, 410)">
+    <!-- Foliage -->
+    <path d="M0 90 Q30 40 80 50 Q120 30 160 70 Q110 90 0 90 Z" fill="#14532d" />
+    <!-- Pink & Magenta Blossoms -->
+    <circle cx="20" cy="55" r="9" fill="#f43f5e" />
+    <circle cx="26" cy="50" r="8" fill="#fb7185" />
+    <circle cx="16" cy="48" r="7" fill="#e11d48" />
+    <circle cx="34" cy="56" r="6" fill="#fda4af" />
+    <circle cx="25" cy="52" r="3" fill="#fef08a" />
+
+    <circle cx="65" cy="45" r="11" fill="#e11d48" />
+    <circle cx="73" cy="40" r="9" fill="#f43f5e" />
+    <circle cx="58" cy="38" r="8" fill="#fda4af" />
+    <circle cx="80" cy="48" r="7" fill="#f43f5e" />
+    <circle cx="68" cy="42" r="3.5" fill="#fef08a" />
+
+    <circle cx="115" cy="52" r="10" fill="#f43f5e" />
+    <circle cx="123" cy="48" r="8" fill="#fda4af" />
+    <circle cx="108" cy="45" r="7" fill="#e11d48" />
+    <circle cx="130" cy="55" r="6" fill="#f43f5e" />
+    <circle cx="118" cy="49" r="3" fill="#fef08a" />
+
+    <circle cx="150" cy="65" r="8" fill="#e11d48" />
+    <circle cx="156" cy="60" r="7" fill="#fb7185" />
+    <circle cx="144" cy="58" r="6" fill="#fda4af" />
+  </g>
+
+  <!-- WARM GOLDEN SUNSET/SUNRISE AMBIENT OVERLAY -->
+  <rect x="0" y="0" width="1600" height="500" fill="url(#sunGlow)" opacity="0.35" style="mix-blend-mode: overlay;" />
+</svg>

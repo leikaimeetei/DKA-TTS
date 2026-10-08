@@ -1,0 +1,8 @@
+{
+  "name": "Dhatwal Ki Awaaz - TTS",
+  "description": "Studio-quality Text to Speech platform with authentic Indian accents in Indian English and Hindi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
